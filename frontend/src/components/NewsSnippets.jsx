@@ -1,15 +1,16 @@
 import React from 'react'
 
-const HotNews = () => {
+const NewsSnippets = (props) => {
+    const {topic, title} = props;
   return (
     <div className='mt-5 text-center'>
-        <h1 className='font-bold text-2xl'>Hot News</h1>
+        <h1 className='font-bold text-2xl'>{topic}</h1>
         <div className='flex gap-5 justify-center mt-10'>
             <div className='flex flex-col items-center'>
               <img src="./assets/election.jpg" alt="" height={100} width={200}/>
               <div className='w-96'>
                   <p>
-                      Former U.S. President Donald Trump would veto legislation establishing a federal abortion ban, says Vance
+                      {title}
                   </p>
               </div>
             </div>
@@ -37,4 +38,4 @@ const HotNews = () => {
   )
 }
 
-export default HotNews
+export default NewsSnippets
