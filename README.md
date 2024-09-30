@@ -1,1 +1,1 @@
-An website to display news from different news providers. Work in progress 
+A website to display news from different news providers. Work in progress 
